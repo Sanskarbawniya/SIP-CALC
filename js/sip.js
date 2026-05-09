@@ -19,11 +19,17 @@ function calculateSIP(){
 
   let investedAmount = investment * months;
 
-  let estimatedReturns = futureValue - investedAmount;
+  let estimatedReturn = futureValue - investedAmount;
 
   document.getElementById("investedAmount").innerText = "₹" + investedAmount.toFixed(0);
 
-  document.getElementById("estimatedReturns").innerText = "₹" + estimatedReturns.toFixed(0);
+  document.getElementById("estimatedReturn").innerText = "₹" + estimatedReturn.toFixed(0);
 
   document.getElementById("totalValue").innerText = "₹" + futureValue.toFixed(0);
 }
+
+
+
+
+
+
