@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROI Calculator</title>
+    <link rel="stylesheet" href="../css/calculator.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <h1>ROI Calculator</h1>
+
+            <div class="input-group">
+                <label>Initial Investment</label>
+                <input type="number" id="investment">
+            </div>
+
+            <div class="input-group">
+                <label>Final Value</label>
+                <input type="number" id="finalValue">
+            </div>
+
+            <div class="input-group">
+                <label>Investment Duration (years)</label>
+                <input type="number" id="years">
+            </div>
+
+            <button onclick="calculateROI()">Calculate ROI</button>
+
+            <div class="result">
+                <div class="result-box">
+                    <p>Net Profit</p>
+                    <h3 id="netProfit">₹0</h3>
+                </div>
+
+                <div class="result-box">
+                    <p>Annual ROI</p>
+                    <h3 id="annualROI">0% per year</h3>
+                </div>
+
+                <div class="result-box total">
+                    <p>ROI Percentage</p>
+                    <h2 id="roiResult">0%</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.min.js"></script>
+    <script src="../js/return-of-interest.js"></script>
+
+</body>
+
+</html>

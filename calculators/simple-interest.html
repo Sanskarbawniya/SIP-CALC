@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple-Interest Calculator</title>
+    <link rel="stylesheet" href="../css/calculator.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Simple-Interest Calculator</h1>
+            <div class="input-group">
+                <label>Principal Amount</label>
+                <input type="number" id="principal">
+            </div>
+
+            <div class="input-group">
+                <label>Annual Rate of Interest  (%)</label>
+                <input type="number" id="interestRate">
+            </div>
+
+            <div class="input-group">
+                <label>Time Period (Years)</label>
+                <input type="number" id="time">
+            </div>
+
+            <button onclick="calculateSimpleInterest()">Calculate</button>
+
+            <div class="result">
+                <div class="result-box">
+                    <p>Simple Interest</p>
+                    <h2 id="simpleInterest">₹0</h2>
+                </div>
+                <div class="result-box">
+                    <p>Principal Amount</p>
+                    <h3 id="principalAmount">₹0</h3>
+                </div>
+
+                <div class="result-box">
+                    <p>Total Amount</p>
+                    <h3 id="totalAmount">₹0</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/simple-interest.js"></script>
+</body>
+</html>
