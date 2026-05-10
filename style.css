@@ -17,6 +17,14 @@ header{
 }
 
 
+nav a{
+  text-decoration:none;
+  color:black;
+  font-weight:500;
+  margin-left:25px;
+}
+
+
 
 .calculator-grid{
   width:90%;

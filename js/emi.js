@@ -25,7 +25,7 @@ function calculateEMI(){
 
     let totalInterest = totalPayment - principal;
 
-    document.getElementById("monthlyEMI").innerText = "₹" + emi.toFixed(0);
-    document.getElementById("totalInterest").innerText = "₹" + totalInterest.toFixed(0);
-    document.getElementById("totalPayment").innerText = "₹" + totalPayment.toFixed(0);
+    document.getElementById("monthlyEMI").innerText = "₹" + emi.toFixed(0).toLocaleString('en-IN');
+    document.getElementById("totalInterest").innerText = "₹" + totalInterest.toFixed(0).toLocaleString('en-IN');
+    document.getElementById("totalPayment").innerText = "₹" + totalPayment.toFixed(0).toLocaleString('en-IN');
 }

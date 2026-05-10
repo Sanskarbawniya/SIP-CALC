@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIP-Calculator</title>
+
+    <title>Mutual Fund Calculator</title>
 
     <link rel="stylesheet" href="../css/calculator.css">
 </head>
@@ -13,33 +14,34 @@
 
     <div class="container">
         <div class="calculator">
-            <h1>SIP-Calculator</h1>
+            <h1>Mutual Fund Calculator</h1>
             <div class="input-group">
                 <label>Monthly Investment</label>
                 <input type="number" id="investment">
             </div>
 
             <div class="input-group">
-                <label>Expected Return(%)</label>
+                <label>Expected Return Rate (%)</label>
                 <input type="number" id="rate">
             </div>
 
             <div class="input-group">
-                <label>Time Period(Years)</label>
-                <input type="number" id="years">
+                <label>Time Period (Years)</label>
+                <input type="number" id="years" >
             </div>
 
-            <button onclick="calculateSIP()">Calculate</button>
+            <button onclick="calculateMutualFund()">
+                Calculate
+            </button>
 
             <div class="result">
-
                 <div class="result-box">
-                    <p>Invested Amount</p>
+                    <p>Total Invested</p>
                     <h3 id="investedAmount">₹0</h3>
                 </div>
 
                 <div class="result-box">
-                    <p>Estimated Return</p>
+                    <p>Estimated Returns</p>
                     <h3 id="estimatedReturn">₹0</h3>
                 </div>
 
@@ -47,14 +49,12 @@
                     <p>Total Value</p>
                     <h2 id="totalValue">₹0</h2>
                 </div>
-
             </div>
         </div>
-
     </div>
 
-    <script src="../js/sip.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.min.js"></script>
+    <script src="../js/mutual-funds.js"></script>
 </body>
 
 </html>

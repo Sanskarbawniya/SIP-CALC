@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car-Loan EMI Calculator </title>
+    <link rel="stylesheet" href="../css/calculator.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Car-Loan EMI Calculator</h1>
+            <div class="input-group">
+                <label>Loan Amount</label>
+                <input type="number" id="loanAmount" placeholder="Enter loan amount">
+            </div>
+
+            <div class="input-group">
+                <label>Annual Rate of Interest  (%)</label>
+                <input type="number" id="interestRate" placeholder="Enter annual interest rate">
+            </div>
+
+            <div class="input-group">
+                <label>Loan Tenure (Years)</label>
+                <input type="number" id="years" placeholder="Enter loan tenure in years">
+            </div>
+
+            <button onclick="calculateCarLoan()">Calculate EMI</button>
+
+            <div class="result">
+                <div class="result-box total">
+                    <p>Monthly EMI</p>
+                    <h2 id="EMI">₹0</h2>
+                </div>
+                <div class="result-box">
+                    <p>Total Principal Amount</p>
+                    <h3 id="principal">₹0</h3>
+                </div>
+                <div class="result-box">
+                    <p>Total Interest</p>
+                    <h3 id="totalInterest">₹0</h3>
+                </div>
+                <div class="result-box">
+                    <p>Total Payment</p>
+                    <h3 id="totalPayment">₹0</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="../js/car-loan.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.min.js"></script>
+</body>
+</html>

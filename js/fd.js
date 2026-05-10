@@ -29,11 +29,9 @@ function calculateFD() {
 
     let estimatedReturns = math.subtract(maturityAmount, principal);
 
-    document.getElementById( "investedAmount").innerText = "₹" + math.round(principal);
-
-    document.getElementById( "estimatedReturns").innerText = "₹" + math.round(estimatedReturns);
-
-    document.getElementById( "totalValue").innerText = "₹" + math.round(maturityAmount);
+    document.getElementById( "investedAmount").innerText = "₹" + math.round(principal).toLocaleString('en-IN');
+    document.getElementById( "estimatedReturns").innerText = "₹" + math.round(estimatedReturns).toLocaleString('en-IN');
+    document.getElementById( "totalValue").innerText = "₹" + math.round(maturityAmount).toLocaleString('en-IN');
 
 
 
