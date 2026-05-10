@@ -17,42 +17,28 @@
 <body>
 
   <div class="container">
-
     <div class="calculator">
-
       <h1>Lumpsum Calculator</h1>
 
       <div class="input-group">
         <label>Investment Amount</label>
 
-        <input
-          type="number"
-          id="principal"
-          placeholder="Enter investment amount"
-        >
+        <input type="number" id="principal" placeholder="Enter investment amount" >
       </div>
 
       <div class="input-group">
         <label>Expected Return Rate (%)</label>
 
-        <input
-          type="number"
-          id="rate"
-        >
+        <input type="number" id="rate">
       </div>
 
       <div class="input-group">
         <label>Time Period (Years)</label>
 
-        <input
-          type="number"
-          id="years"
-        >
+        <input type="number" id="years">
       </div>
 
-      <button onclick="calculateLumpsum()">
-        Calculate
-      </button>
+      <button onclick="calculateLumpsum()">Calculate</button>
 
       <div class="result">
 
@@ -70,15 +56,10 @@
           <p>Total Value</p>
           <h2 id="totalValue">₹0</h2>
         </div>
-
       </div>
-
     </div>
-
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.8.1/math.min.js"></script>
   <script src="../js/lumpsum.js"></script>
 
 </body>
