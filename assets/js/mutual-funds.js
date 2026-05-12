@@ -27,11 +27,11 @@ function calculateMutualFund() {
 
     let futureValue = math.multiply(investment, math.divide(math.subtract(math.pow(math.add(1, monthlyRate), months), 1), monthlyRate ), math.add(1, monthlyRate));
 
-    let investedAmount = math.multiply( investment, months);
+                let investedAmount = math.multiply( investment, months);
 
-    let estimatedReturn = math.subtract(futureValue, investedAmount);
+                let estimatedReturn = math.subtract(futureValue, investedAmount);
 
-    document.getElementById("investedAmount").innerText = "₹" + math.round(investedAmount).toLocaleString('en-IN');
-    document.getElementById("estimatedReturn").innerText = "₹" + math.round(estimatedReturn).toLocaleString('en-IN');
-    document.getElementById("totalValue").innerText = "₹" + math.round(futureValue).toLocaleString('en-IN');
-}
+    document.getElementById("investedAmount").innerText = "₹" + math.round(investedAmount).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById("estimatedReturn").innerText = "₹" + math.round(estimatedReturn).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById("totalValue").innerText = "₹" + math.round(futureValue).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+}   

@@ -21,11 +21,11 @@ function calculateSIP(){
 
   let estimatedReturn = futureValue - investedAmount;
 
-  document.getElementById("investedAmount").innerText = "₹" + investedAmount.toFixed(0).toLocaleString('en-IN');
+  document.getElementById("investedAmount").innerText = "₹" + investedAmount.toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 
-  document.getElementById("estimatedReturn").innerText = "₹" + estimatedReturn.toFixed(0).toLocaleString('en-IN');
+  document.getElementById("estimatedReturn").innerText = "₹" + estimatedReturn.toLocaleString('en-IN' , {minimumFractionDigits: 2, maximumFractionDigits: 2});
 
-  document.getElementById("totalValue").innerText = "₹" + futureValue.toFixed(0).toLocaleString('en-IN');
+  document.getElementById("totalValue").innerText = "₹" + futureValue.toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 }
 
 

@@ -22,7 +22,7 @@ function calculateCompoundInterest() {
 
     let interestEarned =math.subtract(totalValue, principal);
 
-    document.getElementById("investedAmount").innerText ="₹" + math.round(principal).toLocaleString('en-IN');
-    document.getElementById("estimatedReturns").innerText ="₹" + math.round(interestEarned).toLocaleString('en-IN');
-    document.getElementById("totalValue").innerText ="₹" + math.round(totalValue).toLocaleString('en-IN');
+    document.getElementById("investedAmount").innerText ="₹" + math.round(principal).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById("estimatedReturns").innerText ="₹" + math.round(interestEarned).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById("totalValue").innerText ="₹" + math.round(totalValue).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 }

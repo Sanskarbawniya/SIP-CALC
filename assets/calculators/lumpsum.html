@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +9,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>FD-Calculator</title>
+  <title>Lumpsum Calculator</title>
 
   <link rel="stylesheet" href="../css/calculator.css">
 </head>
@@ -13,39 +17,28 @@
 <body>
 
   <div class="container">
-
     <div class="calculator">
-
-      <h1>FD-Calculator</h1>
+      <h1>Lumpsum Calculator</h1>
 
       <div class="input-group">
         <label>Investment Amount</label>
-        <input
-          type="number"
-          id="principal"
-          placeholder="Enter investment amount"
-        >
+
+        <input type="number" id="principal" placeholder="Enter investment amount" >
       </div>
 
       <div class="input-group">
-        <label> Rate of interest(%)</label>
-        <input
-          type="number"
-          id="rate"
-          placeholder="Enter annual interest rate"
-        >
+        <label>Expected Return Rate (%)</label>
+
+        <input type="number" id="rate">
       </div>
 
       <div class="input-group">
-        <label>Time Period(Years)</label>
-        <input
-          type="number"
-          id="years"
-          placeholder="Enter time period"
-        >
+        <label>Time Period (Years)</label>
+
+        <input type="number" id="years">
       </div>
 
-      <button onclick="calculateFD()">Calculate</button>
+      <button onclick="calculateLumpsum()">Calculate</button>
 
       <div class="result">
 
@@ -56,23 +49,18 @@
 
         <div class="result-box">
           <p>Estimated Returns</p>
-          <h3 id="estimatedReturns">₹0</h3>
+          <h3 id="estimatedReturn">₹0</h3>
         </div>
 
         <div class="result-box total">
           <p>Total Value</p>
           <h2 id="totalValue">₹0</h2>
         </div>
-
       </div>
-
     </div>
-
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.min.js"></script>
-
-  <script src="../js/fd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.8.1/math.min.js"></script>
+  <script src="../js/lumpsum.js"></script>
 
 </body>
 </html>
