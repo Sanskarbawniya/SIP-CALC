@@ -38,9 +38,9 @@ function calculateRD() {
 
     let estimatedReturns =math.subtract(maturityAmount, investedAmount);
 
-    document.getElementById("investedAmount").innerText = "₹" + math.round(investedAmount);
+    document.getElementById("investedAmount").innerText = "₹" + math.round(investedAmount).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 
-    document.getElementById("estimatedReturns").innerText = "₹" + math.round(estimatedReturns);
+    document.getElementById("estimatedReturns").innerText = "₹" + math.round(estimatedReturns).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 
-    document.getElementById("totalValue").innerText = "₹" + math.round(maturityAmount);
+    document.getElementById("totalValue").innerText = "₹" + math.round(maturityAmount).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 }

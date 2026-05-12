@@ -19,7 +19,7 @@ function calculateLumpsum() {
 
     let estimatedReturn =math.subtract(totalValue, principal);
 
-    document.getElementById("investedAmount").innerText = "₹" + math.round(principal).toLocaleString('en-IN');
-    document.getElementById("estimatedReturn").innerText = "₹" + math.round(estimatedReturn).toLocaleString('en-IN');
-    document.getElementById("totalValue").innerText = "₹" + math.round(totalValue).toLocaleString('en-IN');
+    document.getElementById("investedAmount").innerText = "₹" + math.round(principal).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById("estimatedReturn").innerText = "₹" + math.round(estimatedReturn).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById("totalValue").innerText = "₹" + math.round(totalValue).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 }

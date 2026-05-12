@@ -17,7 +17,7 @@ function calculateSimpleInterest() {
   const totalAmount = principal + interest;
   
 
-    document.getElementById('simpleInterest').innerText = "₹" + interest.toFixed(2).toLocaleString('en-IN');
-    document.getElementById('principalAmount').innerText = "₹" + principal.toFixed(2).toLocaleString('en-IN');
-    document.getElementById('totalAmount').innerText = "₹" + totalAmount.toFixed(2).toLocaleString('en-IN');
+    document.getElementById('simpleInterest').innerText = "₹" + interest.toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById('principalAmount').innerText = "₹" + principal.toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById('totalAmount').innerText = "₹" + totalAmount.toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 }

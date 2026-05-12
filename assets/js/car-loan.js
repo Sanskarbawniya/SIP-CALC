@@ -26,10 +26,10 @@ function calculateCarLoan() {
 
     let totalPayment = math.multiply(emi, numberOfPayments);
     let totalInterest = math.subtract(totalPayment, loanAmount);
-    document.getElementById("EMI").innerText = "₹" + math.round(emi).toLocaleString('en-IN');
-    document.getElementById("principal").innerText = "₹" + math.round(loanAmount).toLocaleString('en-IN');
-    document.getElementById("totalPayment").innerText = "₹" + math.round(totalPayment).toLocaleString('en-IN');
-    document.getElementById("totalInterest").innerText = "₹" + math.round(totalInterest).toLocaleString('en-IN');
+    document.getElementById("EMI").innerText = "₹" + math.round(emi).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById("principal").innerText = "₹" + math.round(loanAmount).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById("totalPayment").innerText = "₹" + math.round(totalPayment).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById("totalInterest").innerText = "₹" + math.round(totalInterest).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 
 
 }

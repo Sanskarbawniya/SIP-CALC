@@ -17,8 +17,8 @@ function calculateHomeLoan() {
     const totalPayment = emi * totalPayments;
     const totalInterest = totalPayment - principal;
     document.getElementById('emi').innerText = '₹' + emi.toLocaleString('en-IN');
-    document.getElementById('totalInterest').innerText = '₹' + totalInterest.toLocaleString('en-IN');
-    document.getElementById('totalAmount').innerText = '₹' + totalPayment.toLocaleString('en-IN');
-document.getElementById('principalAmount').innerText = '₹' + principal.toLocaleString('en-IN');
+    document.getElementById('totalInterest').innerText = '₹' + totalInterest.toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById('totalAmount').innerText = '₹' + totalPayment.toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById('principalAmount').innerText = '₹' + principal.toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 
 }
